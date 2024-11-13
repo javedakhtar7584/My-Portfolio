@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Education</title>
+    <style>
+       .education-page {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for the education section */
+}
+
+.education-page header {
+    background-color: #1e1e1e; /* Slightly lighter header background */
+    color: white; /* Header text color */
+    padding: 20px 0; /* Padding for header */
+    text-align: center; /* Center the header text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for header */
+}
+
+.education-page h1 {
+    font-size: 2.5em; /* Font size for the main heading */
+}
+
+.education-details {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center the cards */
+    margin: 20px 0; /* Margin for the section */
+}
+
+.education-card {
+    background-color: #1e1e1e; /* Card background color */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Shadow for cards */
+    margin: 15px; /* Margin between cards */
+    padding: 20px; /* Padding for content */
+    max-width: 500px; /* Maximum width for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.education-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2); /* Deeper shadow on hover */
+}
+
+.education-card h2 {
+    font-size: 1.8em; /* Font size for degree/title */
+    margin: 10px 0; /* Margin for title */
+    color: #00acc1; /* Accent color for titles */
+}
+
+.education-card p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+/* Animation for when the cards appear */
+.education-card {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.5s forwards; /* Animate */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="education-page"> <!-- Wrapper for education section -->
+        <header>
+            <h1>Education...</h1>
+        </header>
+
+        <section class="education-details">
+            <div class="education-card">
+                <h2>Bachelor of technology in Computer Science & Engineering</h2>
+                <p><strong>Institution:</strong> Integral University</p>
+                <p><strong>Year:</strong> 2021 - 2025</p>
+                <p>I am looking for dynamic development environment where I can challenge
+                    myself, learn new skills and increase my abilities for organizational goals as
+                    well as for myself.</p>
+                <p><strong>Highlights:</strong> Coursework in Data Structures and Algorithms (DSA), Java, JavaScript, HTML, CSS, MySQL, and C.</p>
+            </div>
+
+            <div class="education-card">
+                <h2>Higher Secondary Certificate (HSC)</h2>
+                <p><strong>Institution:</strong> Chanda Devi Intermediate</p>
+                <p><strong>Year:</strong> 2019 - 2021</p>
+                <p><strong>Highlights:</strong> Specialization in Science, participated in various inter-school competitions.</p>
+            </div>
+
+            <div class="education-card">
+                <h2>Secondary School Certificate (SSC)</h2>
+                <p><strong>Institution:</strong> Shon bhadra Intermediate</p>
+                <p><strong>Year:</strong> 2017 - 2019</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

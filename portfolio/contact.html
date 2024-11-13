@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contact {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #ff4081; /* Highlighted color for heading */
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #ffffff;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background-color: #444;
+            border: 2px solid #ff4081; /* Highlight on focus */
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #ff4081;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #e91e63; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" onsubmit="return showAlert()">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function showAlert() {
+            alert("Your message has been successfully sent!");
+            // You can also reset the form after submission if needed
+            // document.querySelector('.contact-form').reset();
+            return false; // Prevent actual form submission for demo purposes
+        }
+    </script>
+</body>
+</html>
